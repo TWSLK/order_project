@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="5dip"
+        android:orientation="vertical" >
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        <RelativeLayout 
+            android:layout_width="1dip"
+            android:layout_height="100dip">
+
+ 
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="5dip" >
+           
+       
+         
+            
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+             android:background="@drawable/bg"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="5dip" >
+            
+	          <LinearLayout
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:orientation="horizontal"
+	          android:paddingLeft="0.1dip" >
+	            <TextView
+	                android:id="@+id/order_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginLeft="3dp"
+	                android:maxLines="2"
+	                android:text="OK"
+	                android:textColor="#008080"
+	                android:textSize="18dp" />
+	                <TextView
+			                android:id="@+id/order_date"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginLeft="150dp"
+			                android:maxLines="4"
+			                android:textColor="#6495ED"
+			                android:text="121111113"
+			                android:textSize="12dp" />
+	          </LinearLayout>
+               <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+		             <TextView
+		                android:id="@+id/ordertext"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_marginLeft="3dp"
+		                android:maxLines="4"
+		                android:textColor="#000000"
+		                android:text="12111111111111113"
+		                android:textSize="12dp" />
+            </LinearLayout>
+	      
+	            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+		          <Button
+                    android:id="@+id/orderprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  
+                    android:layout_marginRight="200dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:focusable="false"
+                    android:text="是否已完成"
+                    android:background="#ffffff"
+                    android:textColor="#F08080"
+                    android:textSize="12dp" />    
+                    
+		          
+		                  <Button
+                    android:id="@+id/confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  
+                    android:layout_marginRight="120dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:focusable="false"
+                    android:text="我要并台"
+                    android:textColor="#ffffff"
+                    android:background="#DDA0DD"
+                    android:textSize="12dp" />   
+	                
+	                
+                <Button
+                    android:id="@+id/orderstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:visibility="gone"
+                    android:layout_marginRight="5dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:focusable="false"
+                    android:text="赞(12)"
+                    android:background="#00000000"
+                    android:textColor="#F08080"
+                    android:textSize="12dp" />
+                
+                
+                
+            </RelativeLayout>
+	            
+            </LinearLayout>
+       
+             
+            
+        </LinearLayout>
+    </LinearLayout>
+ </LinearLayout>
+</LinearLayout>

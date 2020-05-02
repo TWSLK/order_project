@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+
+
+	<bean id="commentsservice" class="service.impl.CommentsServiceImpl">
+		<property name="commentsdao" ref="commentsdao" />
+		<property name="userdao" ref="userdao" />
+	</bean>
+	<bean id="userservice" class="service.impl.UserServiceImpl">
+		<property name="userdao" ref="userdao" />
+	</bean>
+	<bean id="adminservice" class="service.impl.AdminServiceImpl">
+		<property name="admindao" ref="admindao" />
+	</bean>
+		<bean id="shopcartservice" class="service.impl.ShopCartServiceImpl">
+		<property name="shopcartdao" ref="shopcartdao"/>
+		<property name="goodsdao" ref="goodsdao"/>
+	</bean>
+	<bean id="orderservice" class="service.impl.OrderServiceImpl">
+		<property name="goodsdao" ref="goodsdao"/>
+		<property name="orderdao" ref="orderdao"/>
+		<property name="shopcartdao" ref="shopcartdao"/>
+		<property name="userdao" ref="userdao"/>
+		<property name="deskdao" ref="deskdao"/>
+	</bean>
+	
+	<bean id="goodsservice" class="service.impl.GoodsServiceImpl">
+		<property name="goodsdao" ref="goodsdao"/>
+	</bean>
+	<bean id="deskservice" class="service.impl.DeskServiceImpl">
+		<property name="deskdao" ref="deskdao"/>
+	</bean>
+</beans>
